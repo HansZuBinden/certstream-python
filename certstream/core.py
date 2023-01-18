@@ -25,6 +25,7 @@ class CertStreamClient(WebSocketApp):
             on_open=self._on_open,
             on_message=self._on_message,
             on_error=self._on_error,
+            set_proxy="",
         )
 
     def _on_open(self, _):
